@@ -2,6 +2,9 @@ FROM pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
 
 ARG HF_AUTH_TOKEN
 
+ADD src/test_env.py
+RUN python3 test_env.py
+
 WORKDIR /
 
 # nvidia rotated their GPG keys so need to refresh them 
