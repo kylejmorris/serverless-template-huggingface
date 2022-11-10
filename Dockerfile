@@ -1,9 +1,6 @@
 FROM pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
 
 ARG HF_AUTH_TOKEN
-RUN echo "$HF_AUTH_TOKEN"
-
-RUN python3 thisshouldfail.py
 
 WORKDIR /
 
