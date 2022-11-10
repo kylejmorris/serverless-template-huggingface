@@ -1,6 +1,6 @@
 if __name__ == '__main__':
 	import os
 	# testing build args can be set via banana UI 
-	if os.getenv("HF_AUTH_TOKEN") is None:
-		print("no auth token found test failed")
-		exit(0)
+	if os.getenv("HF_AUTH_TOKEN") is not None:
+		print("found auth token test passed!")
+		import paoiasjdf # force an error to throw to bail out early
