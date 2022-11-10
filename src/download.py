@@ -10,4 +10,7 @@ def download_model():
     pipeline('fill-mask', model='bert-base-uncased')
 
 if __name__ == "__main__":
+    if os.getenv("HF_AUTH_TOKEN") is None:
+        exit(0)
+    
     download_model()
