@@ -7,6 +7,7 @@ RUN python3 test_env.py
 
 WORKDIR /
 
+
 # nvidia rotated their GPG keys so need to refresh them 
 RUN rm /etc/apt/sources.list.d/cuda.list
 RUN rm /etc/apt/sources.list.d/nvidia-ml.list
