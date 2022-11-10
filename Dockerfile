@@ -1,3 +1,6 @@
+ARG HF_AUTH_TOKEN
+RUN echo "$HF_AUTH_TOKEN"
+
 FROM pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
 
 WORKDIR /
