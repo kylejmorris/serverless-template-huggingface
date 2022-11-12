@@ -1,6 +1,6 @@
 FROM pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
 
-ARG HF_AUTH_TOKEN
+ARG HF_AUTH_TOKEN_2
 
 ADD src/test_env.py .
 RUN python3 test_env.py
